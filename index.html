@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чоловічий одяг</title>
+    <style>
+        body {
+            background-color: #f5f5f5; /* Світлий фон для легшого вигляду */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333; /* Темно-сірий текст */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #4B5320; /* Теплий зелений відтінок */
+            font-size: 2em;
+            cursor: pointer;
+        }
+        .nav, .categories-nav {
+            background-color: #4B5320; /* Теплий зелений */
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a, .categories-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+        .nav a:hover, .categories-nav a:hover {
+            background-color: #6A8E3E; /* Світліший зелений при наведенні */
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .photo {
+            text-align: center;
+        }
+        .photo img {
+            width: 350px; /* Зменшений розмір фото */
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .photo img:hover {
+            transform: scale(1.1); /* Легке збільшення при наведенні */
+        }
+
+        h2 {
+            color: #4B5320;
+            margin-top: 40px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 8px 0;
+            font-size: 1.1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff; /* Білий фон для таблиці */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Додає тінь */
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+        th {
+            background-color: #4B5320;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #f0f0f0; /* Легка зміна кольору при наведенні на комірки */
+        }
+        td.active {
+            background-color: #FFD700; /* Яскравий колір для активних комірок */
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навігаційний блок -->
+    <div class="nav">
+        <a href="#">Головна</a>
+        <a href="#">Каталог</a>
+        <a href="#">Про нас</a>
+        <a href="#">Контакти</a>
+    </div>
+
+    <!-- Навігаційний блок для категорій -->
+    <div class="categories-nav">
+        <a href="#shirts">Сорочки</a>
+        <a href="#jackets">Куртки</a>
+        <a href="#pants">Штани</a>
+        <a href="#suits">Костюми</a>
+        <a href="#accessories">Аксесуари</a>
+    </div>
+
+    <h1 id="main-title">Магазин чоловічого одягу</h1>
+
+    <div class="container">
+        <!-- Фото чоловіка в повний зріст -->
+        <div class="photo">
+            <img src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" alt="Фото чоловіка в повний зріст">
+        </div>
+
+        <!-- Список категорій одягу -->
+        <h2 id="shirts">Категорії: Сорочки</h2>
+        <ul>
+            <li>Сорочка класична</li>
+            <li>Сорочка з коротким рукавом</li>
+        </ul>
+
+        <h2 id="jackets">Категорії: Куртки</h2>
+        <ul>
+            <li>Куртка зимова</li>
+            <li>Куртка осіння</li>
+        </ul>
+
+        <h2 id="pants">Категорії: Штани</h2>
+        <ul>
+            <li>Штани повсякденні</li>
+            <li>Штани спортивні</li>
+        </ul>
+
+        <h2 id="suits">Категорії: Костюми</h2>
+        <ul>
+            <li>Костюм діловий</li>
+            <li>Костюм вечірній</li>
+        </ul>
+
+        <h2 id="accessories">Категорії: Аксесуари</h2>
+        <ul>
+            <li>Годинники</li>
+            <li>Ремені</li>
+        </ul>
+
+        <!-- Таблиця з популярними товарами -->
+        <h2>Популярні товари:</h2>
+        <table>
+            <tr>
+                <th>Назва</th>
+                <th>Ціна</th>
+                <th>Наявність</th>
+            </tr>
+            <tr>
+                <td>Сорочка класична</td>
+                <td>800 грн</td>
+                <td>В наявності</td>
+            </tr>
+            <tr>
+                <td>Куртка зимова</td>
+                <td>2500 грн</td>
+                <td>В наявності</td>
+            </tr>
+            <tr>
+                <td>Штани повсякденні</td>
+                <td>600 грн</td>
+                <td>Немає в наявності</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // Зміна кольору фону при кліку на заголовок
+        document.getElementById('main-title').addEventListener('click', function() {
+            document.body.style.backgroundColor = document.body.style.backgroundColor === 'rgb(245, 245, 245)' ? '#ADD8E6' : '#f5f5f5';
+        });
+
+        // Зміна кольору та розміру комірок таблиці при натисканні
+        document.querySelectorAll('td').forEach(function(cell) {
+            cell.addEventListener('click', function() {
+                cell.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
